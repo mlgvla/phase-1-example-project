@@ -1,5 +1,5 @@
-- [ ] write function to create Pokemon database object
-- [ ] stringify it and seed db.json file
+- [x] write function to create Pokemon database object
+- [x] stringify it and seed db.json file
 
 
 Deliverables:
