@@ -13,6 +13,7 @@
     <script defer src="index.js"></script>
     <title>Pokemon Museum</title>
   </head>
+
   <body>
     <div class="container-fluid p-5 bg-primary text-white text-center">
       <h1>Pokemon Museum</h1>
@@ -20,31 +21,17 @@
 
     <div class="container mt-5">
       <div class="row">
+
+        <!-- Pokemon Menu Items -->
         <div class="col-sm-8 p-4">
-          <!-- Pokemon Menu Items -->
-          <div class="row" id="list-items">
-            <!-- <div class="col-2">
-              <div class="card">
-                <img
-                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
-                  alt=""
-                  class="card-img-top"
-                  height="96"
-                  width="96"
-                />
-                <div class="card-body">
-                  <h4 class="card-title text-center">Bulbasaur</h4>
-                </div>
-              </div>
-            </div> -->
-
-            
-          </div>
-      
+          <div
+            class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5"
+            id="list-items"
+          ></div>
         </div>
-        <div class="col-sm-4">
-          <!-- Pokemon Detail -->
 
+        <!-- Pokemon Detail -->
+        <div class="col-sm-4 p-4">
           <h2 class="text-center" id="pokemon-name"></h2>
           <img src="" alt="" id="pokemon-image" />
           <div id="likes-section">
@@ -57,6 +44,7 @@
             <li>From the server</li>
           </ul>
         </div>
+
       </div>
     </div>
 

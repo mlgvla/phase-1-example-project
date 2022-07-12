@@ -12,24 +12,21 @@ function renderPokemonMenuItem(poke) {
 
   let capName = poke.name.charAt(0).toUpperCase() + poke.name.slice(1);
 
-  img = poke.sprites.front;
+  img = poke.sprites.main_artwork;
   span.textContent = capName;
   console.log(img);
-  card.setAttribute("class", "col-auto mb-3");
-  card.innerHTML = `<div class="card">
+  card.setAttribute("class", "col mb-3");
+  card.innerHTML = `<div class="card p-2">
                 <img
                   src="${img}"
                   alt=""
                   class="card-img-top"
-                  height="96"
-                  width="96"
                 />
                 <div class="card-body">
-                  <p class="card-title text-center"><small>${capName}</small></p>
+                  <p class="card-title small text-center">${capName}</p>
                 </div>
               </div>
             </div>`;
-  // div.append(img, span)
   card.addEventListener("click", () => showPokemonDetail(poke));
 
   listItems.append(card);
