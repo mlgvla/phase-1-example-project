@@ -16,7 +16,7 @@ function renderPokemonMenuItem(poke) {
   span.textContent = capName;
   console.log(img);
   card.setAttribute("class", "col mb-3");
-  card.innerHTML = `<div class="card p-2">
+  card.innerHTML = `<div class="card pt-3">
                 <img
                   src="${img}"
                   alt=""
